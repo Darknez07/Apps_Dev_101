@@ -6,3 +6,10 @@ Creating Apps
  <li> This is the first from the series of App devs </li>
  <li> The Library is of JavaFx which is good for java UI </li>
 </ul>
+## Features of the developed
+<ol>
+ <li> This GUI converts the Binary Number to Decimal</li>
+ <li> This app also has a feature for Entering 8 bits</li>
+ <li> Error handling has been properly done </li>
+</ol>
+[Binary2Decimal](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
