@@ -13,4 +13,4 @@ Creating Apps
  <li> Error handling has been properly done </li>
 </ol>
 <a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md"> Bin2Dec</a>
-<img src="Demo.jpg" alt="Demo 1" />
+<img src="Demo.JPG" alt="Demo 1" />
