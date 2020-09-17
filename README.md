@@ -13,4 +13,9 @@ Creating Apps
  <li> Error handling has been properly done </li>
 </ol>
 <a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md"> Bin2Dec</a>
-<img src="Demo.JPG" alt="Demo 1" />
+<ul>
+ <li>Demo 001 Shows how the Design Looks </li><br><img src="Demo.JPG" alt="Demo 001" />
+ <li>Demo 010 is for the type of Invalid Input</li><br><img src="Demo_2.JPG" alt="Demo 010" />
+ <li>Demo 011 Shows Valid Input</li><br><img src="Demo_3.JPG" alt="Demo 011" />
+ <li>Demo 100 Shows another Invalid Input</li><br><img src="Demo_4.JPG" alt="Demo 100" />
+</ul>
