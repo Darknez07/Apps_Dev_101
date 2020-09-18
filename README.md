@@ -29,3 +29,7 @@ Creating Apps
  <li>Demo 101 Shows the right bottom corner</li><br><img src="Demo_CSS_5.JPG" alt="Demo 101" />
  <li>Demo 110 Shows the Invalid Input</li><br><img src="Demo_CSS_Invalid.JPG" alt="Demo 110" />
 </ul>
+<p align="left">
+  <a href="#"><img alt="DenverCoder1's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Darknez07&show_icons=true&count_private=true&hide=" /></a> 
+  <a href="#"><img alt="DenverCoder1's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Darknez07&langs_count=10&layout=compact#" /></a>
+</p>
