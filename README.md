@@ -20,4 +20,10 @@ Creating Apps
  <li>Demo 100 Shows another Invalid Input</li><br><img src="Demo_4.JPG" alt="Demo 100" />
 </ul>
 
-<a href=""> CSS_Border Box</a>
+<a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md"> CSS_Border Box</a>
+<ul>
+ <li>Demo 001 Shows how the Design Looks </li><br><img src="Demo_CSS_1.JPG" alt="Demo 001" />
+ <li>Demo 010 is for the type of Invalid Input</li><br><img src="Demo_CSS_2.JPG" alt="Demo 010" />
+ <li>Demo 011 Shows Valid Input</li><br><img src="Demo_CSS_3.JPG" alt="Demo 011" />
+ <li>Demo 100 Shows another Invalid Input</li><br><img src="Demo_CSS_4.JPG" alt="Demo 100" />
+</ul>
