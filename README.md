@@ -1,5 +1,5 @@
 # Binary to Decimal
-Creating Apps
+Explaining Binary to Decimal Converter as GUI
 ### This is the extension for app ideas
 
 <h3>Features of the developed</h3>
