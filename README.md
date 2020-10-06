@@ -19,7 +19,6 @@ Creating Apps
  <li>Demo 011 Shows Valid Input</li><br><img src="Demo_3.JPG" alt="Demo 011" />
  <li>Demo 100 Shows another Invalid Input</li><br><img src="Demo_4.JPG" alt="Demo 100" />
 </ul>
-
 <h3>Features of the developed</h3>
 <ol>
  <li> This GUI helps to visualize the concept of Border box in CSS</li>
