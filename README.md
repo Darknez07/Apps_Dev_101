@@ -35,6 +35,14 @@ Creating Apps
  <li>Demo 101 Shows the right bottom corner</li><br><img src="Demo_CSS_5.JPG" alt="Demo 101" />
  <li>Demo 110 Shows the Invalid Input</li><br><img src="Demo_CSS_Invalid.JPG" alt="Demo 110" />
 </ul>
+<ul>
+ <li>Demo 001 Shows how the Design Looks </li><br><img src="Calcultor_1.JPG" alt="Demo 001" />
+ <li>Demo 010 is for the left top corner change</li><br><img src="Calcultor_2.JPG" alt="Demo 010" />
+ <li>Demo 011 Shows the right top corner</li><br><img src="Calculator_2.JPG" alt="Demo 011" />
+ <li>Demo 100 Shows the left bottom corner</li><br><img src="Calcultor_3.JPG" alt="Demo 100" />
+ <li>Demo 101 Shows the right bottom corner</li><br><img src="Calculator_3.JPG" alt="Demo 101" />
+ <li>Demo 110 Shows the Invalid Input</li><br><img src="Calculator_4.JPG" alt="Demo 110" />
+</ul>
 <h2>//TODO: Add screenshots of calculator app</h2>
 <p align="left">
   <a href="#"><img alt="DenverCoder1's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Darknez07&show_icons=true&count_private=true&hide=" /></a> 
