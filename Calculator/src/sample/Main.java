@@ -1,8 +1,6 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -16,10 +14,10 @@ import java.util.List;
 public class Main extends Application {
     GridPane gp =  new GridPane();
     GridPane sp = new GridPane();
-    Button[] l = new Button[17];
+    Button[] l = new Button[18];
 
     private  String num ="";
-    private List<String> history = new ArrayList<String>();
+    private final List<String> history = new ArrayList<>();
 
     private Button createbutton(String Number){
         Button btn = new Button(Number);
@@ -47,7 +45,7 @@ public class Main extends Application {
                 btn = createbutton(Integer.toString(i));
                 btn.setFont(Font.font("Aerial",30));
                 l[j++] = btn;
-                gp.addColumn(col,btn);
+                gp.addColumn(col, btn);
                 col++;
                 row++;
             }else if(i == 10){
@@ -67,26 +65,35 @@ public class Main extends Application {
 
     private void fillCompsGp(int row, int col){
         Button btn;
-        String[] s = {"+","-","x","=","<="};
+        String[] s = {"+","-","x","=","<=","/"};
         btn = createbutton(s[0]);
         btn.setFont(Font.font("Aerial",30));
         l[12] = btn;
         gp.addColumn(col,btn);
-        for(int i=1;i<s.length-1;i++){
+        for(int i=1;i<s.length-2;i++){
             btn =createbutton(s[i]);
             btn.setFont(Font.font("Aerial",30));
             l[12+i] = btn;
             gp.addRow(row,btn);
         }
+        btn = createbutton(s[s.length-2]);
+        btn.setFont(Font.font("Aerial",25));
+        l[12+s.length-2] = btn;
+        gp.addColumn(col+1,btn);
         btn = createbutton(s[s.length-1]);
         btn.setFont(Font.font("Aerial",25));
         l[12+s.length-1] = btn;
-        gp.addColumn(col+1,btn);
+        gp.addColumn(col +2,btn);
     }
 
     private int Compute(String num) {
         String[] split = num.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\d)");
         int a,b;
+        for (String s:
+             split) {
+            System.out.print(s+" ");
+        }
+        System.out.println(split.length);
         if(split.length == 4){
                 if(split[1].length() > 1){
                     if(split[1].split("")[0].equals("x") && split[1].split("")[1].equals("-")){
@@ -98,15 +105,23 @@ public class Main extends Application {
             if(split[0].equals("-")) {
                 a = Integer.parseInt(split[0] + split[1]);
                 b = Integer.parseInt(split[3]);
-                if(split[2].equals("+")) {
-                    System.out.println(a + b);
-                    return a + b;
-                } else if (split[2].equals("-")) {
-                    System.out.println(-(-a + b));
-                    return -(-a + b);
-                } else if (split[2].equals("x")) {
-                    System.out.println(a * b);
-                    return a * b;
+                switch (split[2]) {
+                    case "+" -> {
+                        System.out.println(a + b);
+                        return a + b;
+                    }
+                    case "-" -> {
+                        System.out.println(-(-a + b));
+                        return -(-a + b);
+                    }
+                    case "x" -> {
+                        System.out.println(a * b);
+                        return a * b;
+                    }
+                    case "/" -> {
+                        System.out.println(a / b);
+                        return a / b;
+                    }
                 }
             }
         }
@@ -130,6 +145,10 @@ public class Main extends Application {
                 b = Integer.parseInt(split[2]+split[3]);
                 System.out.println(a*b);
                 return  a*b;
+            }else if (split[1].equals("/")){
+                a = Integer.parseInt(split[0]);
+                b = Integer.parseInt(split[2]);
+                return a/b;
             }
         }else{
             if(split[0].equals("-") && split.length == 5) {
@@ -144,9 +163,8 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("Calculators");
 
         // History Text area
 
@@ -174,7 +192,6 @@ public class Main extends Application {
 
         final int[] com = {0};
         final String[] prev = {""};
-        final int[] j = {0};
         fillCompsGp(r[0],r[1]);
         for(int i=0;i<l.length;i++){
             int finalI = i;
@@ -206,22 +223,30 @@ public class Main extends Application {
                 }else if(l[finalI].getText().equals("-") && prev[0].equals("+")){
                     num = num.substring(0,num.length() - 1);
                     num+="-";
-                }else if(l[finalI].getText().equals("+") && prev[0].equals("x")){
+                }else if(l[finalI].getText().equals("x") && prev[0].equals("+")){
+                    num = num.substring(0,num.length() - 1);
+                    num+="x";
+                }
+                else if(l[finalI].getText().equals("+") && prev[0].equals("x")){
                     num = num.substring(0,num.length()-1);
                     num+="x";
-                }else if(l[finalI].getText().equals("=") && Character.isDigit(prev[0].charAt(0)) && com[0] != 0){
-                    num=num;
-               } else if(l[finalI].getText().equals("+") && prev[0].equals("-")){
+                } else if(l[finalI].getText().equals("+") && prev[0].equals("-")){
                     num = num.substring(0,num.length()-1);
                     num+="-";
-                }
-                else{
+                } else if(l[finalI].getText().equals("/") && prev[0].equals("-")){
+                    num = num.substring(0,num.length()-1);
+                    num+="/";
+                }else if(l[finalI].getText().equals("/") && prev[0].equals("x")){
+                    num = num.substring(0, num.length() - 1);
+                    num+="x";
+                }else{
                     num+=l[finalI].getText();
                 }
+                System.out.println(Compute(num));
                 String lastint;
                 com[0] =  Compute(num);
                 if( com[0] !=0) {
-                    if(String.valueOf(com[0]).length() > 10){
+                    if(String.valueOf(com[0]).length() >= 10){
                         num = "ERR";
                     }
                     if (!num.equals("ERR")) {
