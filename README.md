@@ -47,7 +47,7 @@ Creating Apps
  <li> For the division and the floating point numbers(i.e. decimals)  I will updating within 2 weeks</li>
 </ol>
 <ul>
- <li>Demo 001 Shows how the Design Looks </li><br><img src="Calcultor_1.JPG" alt="Demo 001" />
+ <li>Demo 001 Shows how the Design Looks </li><br><img src="With_Div_Calc.JPG" alt="Demo 001" />
  <li>Demo 010 Shows the reccurent calculation features</li><br><img src="Calculator_2.JPG" alt="Demo 010" />
  <li>Demo 011 Shows the negative numbers are calculated</li><br><img src="Calcultor_3.JPG" alt="Demo 011" />
  <li>Demo 100 This is for when "C" is pressed the main screen get's cleared </li><br><img src="Calculator_3.JPG" alt="Demo 100" />
