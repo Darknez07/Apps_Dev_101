@@ -56,7 +56,3 @@ Creating Apps
  <li> Demo 110 This will show divison like "x"</li><br><img src="Divison_Demo_Calc.JPG" alt="Demo 110" />
  <li>Demo 111 Shows the Invalid Input</li><br><img src="Calculator_invalid.JPG" alt="Demo 111" />
 </ul>
-<p align="left">
-  <a href="#"><img alt="Darknez's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Darknez07&show_icons=true&count_private=true&theme=dark" /></a> 
-  <a href="#"><img alt="Darknez's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Darknez07&langs_count=10" /></a>
-</p>
